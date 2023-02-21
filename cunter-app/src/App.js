@@ -1,5 +1,5 @@
 import {Component} from 'react'
-
+import '../src/index.css'
 export default class App extends Component {
   constructor(){
     super()
@@ -25,10 +25,10 @@ export default class App extends Component {
   render(){
 
     return (
-      <div>
+      <div className='main-div'>
         <h1>Counter app</h1>
         <span>{this.state.counter}</span>
-        <div>
+        <div className='btn-div'>
           <button onClick={this.plus}>+</button>
           <button onClick={this.minus}>-</button>
           <button onClick={this.reset}>Reset</button>
